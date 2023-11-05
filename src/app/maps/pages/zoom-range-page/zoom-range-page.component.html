@@ -1,0 +1,25 @@
+<div class="map" #map>
+  <div class="range">
+    <button (click)="zoomOut()" class="btn btn-primary">-</button>
+    <input
+      type="range"
+      min="2"
+      [value]="zoom"
+      (input)="zoomChanged(zoomInput.value)"
+      max="18"
+      class="form-range"
+      id="customRange1"
+      #zoomInput
+    />
+    <button (click)="zoomIn()" class="btn btn-primary">+</button>
+  </div>
+  <div class="date">
+    <span class="form-label">
+      Zoom: {{ zoom | number : "2.2-2" }}
+      <br />
+      Lng,Lat({{ currentLngLat.lat | number : "2.2-2" }},{{
+        currentLngLat.lng | number : "2.2-2"
+      }})
+    </span>
+  </div>
+</div>

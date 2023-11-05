@@ -1,0 +1,18 @@
+<div class="map" #map>
+  <button class="button btn btn-primary" (click)="createMarker()">
+    add marker
+  </button>
+
+  <ul class="list-group">
+    <button
+      (dblclick)="toDeleteMarker(i)"
+      *ngFor="let item of listMarker; let i = index"
+      routerLinkActive="active"
+      (click)="toFly(item.marker)"
+      class="list-group-item"
+      [ngStyle]="{ background: item.color, color: 'white' }"
+    >
+      marker: {{ i + 1 }}
+    </button>
+  </ul>
+</div>

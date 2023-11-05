@@ -1,0 +1,25 @@
+.map{
+  width: 100vw;
+    height: 100vh;
+}
+.range{
+  position: fixed;
+  bottom: 1em;
+  z-index: 9;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  gap:1em;
+}
+.date{
+position: fixed;
+  bottom: 1em;
+  z-index: 9;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  background: #fff;
+  padding:10px;
+  border-radius: 10px;
+}

@@ -1,0 +1,12 @@
+li {
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.list-group{
+  width: 300px;
+  position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+}
